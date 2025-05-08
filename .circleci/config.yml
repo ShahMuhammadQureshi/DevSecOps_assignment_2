@@ -41,8 +41,8 @@ jobs:
           name: Build and Push Docker Image
           command: |
             echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-            docker build -t shahmuhammadqureshi419/myapp:latest .
-            docker push shahmuhammadqureshi419/myapp:latest
+            docker build -t shahmuhammadqureshi419/devsecops_assignment_2:latest .
+            docker push shahmuhammad419/devsecops_assignment_2:tagname
       - run:
           name: Deploying the app
           command: |
